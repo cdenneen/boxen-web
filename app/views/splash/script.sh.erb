@@ -16,7 +16,7 @@ fi
 set -e
 
 if [ ! -f /usr/bin/gcc ]; then
-  XCODE_SCRIPT=/tmp/install-boxen/xcode-cli-tools.sh
+  XCODE_SCRIPT=/tmp/xcode-cli-tools.sh
   curl https://raw.github.com/timsutton/osx-vm-templates/master/scripts/xcode-cli-tools.sh -o $XCODE_SCRIPT
   chmod u+x $XCODE_SCRIPT
   sudo $XCODE_SCRIPT
