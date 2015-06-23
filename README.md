@@ -2,11 +2,12 @@
 
 ## Development
 
-We assume you already have Boxen working on your machine.
+We assume you already have Boxen working on your machine. You also need PostgreSQL installed.
 
     $ cd ~/src/boxen-web
     $ script/bootstrap
     $ script/tests
+    $ bin/rake db:schema:load
     $ script/server
     $ open http://localhost:9393
 
